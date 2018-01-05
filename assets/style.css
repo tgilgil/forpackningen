@@ -17,6 +17,10 @@ a {
     color: orange !important;
 }
 
+a:hover {
+    background-color: rgb(233, 233, 195) !important;
+}
+
 #bg {
     background-image: url('splash.jpg');
     background-size: cover;
