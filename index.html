@@ -1,6 +1,72 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Meute Officiel</title>
+    <link rel="stylesheet" type="text/css" href="vendors/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+</head>
 <body>
-checking if cname is working correctly
+    <div id="bg"></div>
+    <header>
+        <div style="text-align:center;">
+            <h1><img class="paw" src="assets/paw.png" alt="Wouf wouf" /> La Meute <img class="paw" src="assets/paw.png" alt="Wouf wouf" /></h1>
+            <a href="https://info-radical.org/fr/" class="waves-effect waves-light btn-large"><i class="material-icons left">group</i>Groupe Publique</a>            
+            <a href="javascript:scrollToDescription();" class="scroll-down"></a>           
+        </div>
+    </header>
+    <main id="Desc" class="second">
+        <div style="text-align: center;">
+            <h2>Le <strong>meilleur</strong> fan club au Québec en ce qui attrait les <em>furries</em>!</h2>
+            <p>
+                Le site web a été conçu afin de<br />
+                symboliser notre identité et<br />
+                nourrir notre savoir.
+            </p>
+            <p>
+                Il y a quelques mois il n’était qu’embryonnaire,<br />
+                il est par la suite devenu un fœtus et<br />
+                aujourd'hui nous fêtons sa naissance.<br />
+                De cette naissance, nous le nourrirons<br />
+                afin de le faire grandir et<br />
+                qu’il devienne un incontournable.
+            </p>   
+            <p>
+                Chaque semaine, nous intégrerons<br />
+                des images, des vidéos,<br />
+                des textes, des liens, des citations,<br />
+                de l’actualité, de l’histoire………..
+            </p>     
+            <a href="javascript:scrollToDonate();" class="waves-effect waves-light btn-large"><i class="material-icons left">sentiment_very_satisfied</i>Aidez-nous!</a>                        
+        </div>
+    </main>
+    <main id="Donate" class="third">
+        <div style="text-align: center;">
+            <h2>💌</h2>
+            <iframe src="https://donorbox.org/embed/donnez-moi-assez-d-argent-et-je-deviendrai-un-furry" height="685px" width="100%" style="max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>                                    
+        </div>
+    </main>
 </body>
-</html
+    <script src="https://donorbox.org/widget.js" type="text/javascript"></script>
+    <script>
+        function scrollToDescription() {
+            document.querySelector('.second').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function scrollToDonate() {
+            document.querySelector('.third').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    </script>
+</html>
