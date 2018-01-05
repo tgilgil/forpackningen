@@ -31,6 +31,13 @@ a:hover {
     z-index: -999999;
 }
 
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    #bg {
+      background-repeat: no-repeat;
+      background-position-x: -650px; 
+    }
+  }
+
 .paw {
     width: 1em !important;
     vertical-align: middle;
