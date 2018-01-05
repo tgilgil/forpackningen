@@ -12,6 +12,11 @@ html, body {
     align-items:center
 }
 
+a {
+    background-color: beige !important;
+    color: orange !important;
+}
+
 #bg {
     background-image: url('splash.jpg');
     background-size: cover;
