@@ -31,10 +31,10 @@ a:hover {
     z-index: -999999;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (max-width: 400px) { /* Specific to this particular image */
     #bg {
       background-repeat: no-repeat;
-      background-position-x: -650px; 
+      background-position-x: -450px; 
     }
   }
 
